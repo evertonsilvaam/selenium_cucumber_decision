@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="24.684">
+    <testcase classname="Cadastro de Usuário" name="Preenchimento de Dados do Veiculo" time="6.886">
+        <system-out>
+            <![CDATA[Dado o usuario acessa o menu dados do veiculo...............................passed
+Quando o usuario preenche todos os dados do veiculo.........................passed
+Entao o menu Enter Ensurance Data deve ser exibido..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cadastro de Usuário" name="Preenchimento de Informacoes do cliente" time="0.884">
+        <system-out>
+            <![CDATA[Dado o usuario acessa o menu de informações do cliente......................passed
+Quando o usuario preenche todos os dados do cliente.........................passed
+Entao o menu Enter Product Data deve ser exibido............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cadastro de Usuário" name="Preenchimento de Dados do Produto" time="0.651">
+        <system-out>
+            <![CDATA[Dado o usuario acessa o menu dados do produto...............................passed
+Quando o usuario preenche todos os dados do produto.........................passed
+Entao o menu Select Price Option deve ser exibido...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Cadastro de Usuário" name="Selecao do plano" time="0.337">
+        <failure message="element not interactable: [object HTMLButtonElement] has no size and location&#10;  (Session info: chrome=93.0.4577.63)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'indtusuario', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-81-generic', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: /tmp/.com.google.Chrome.URWMHG}, goog:chromeOptions: {debuggerAddress: localhost:37611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c17db0e7378b010c41daf8f52e66711a" type="org.openqa.selenium.ElementNotInteractableException">
+            <![CDATA[Dado o usuario acessa o menu Opcoes de Preco................................passed
+Quando o usuario seleciona o preco..........................................failed
+Entao o menu Send Quote deve ser exibido....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
+  (Session info: chrome=93.0.4577.63)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'indtusuario', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-81-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: /tmp/.com.google.Chrome.URWMHG}, goog:chromeOptions: {debuggerAddress: localhost:37611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c17db0e7378b010c41daf8f52e66711a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at StepDefinitions.LoginSteps.o_usuario_seleciona_o_preco(LoginSteps.java:165)
+	at ✽.o usuario seleciona o preco(file:///home/indtusuario/eclipse-workspace/br.com.decision/src/test/resources/test_cases.feature:22)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Cadastro de Usuário" name="Preenchimento de Dados do Contato" time="15.808">
+        <system-out>
+            <![CDATA[Dado o usuario acessa o menu Enviar Contacao................................passed
+Quando o usuario preenche todos os dados de contato do cliente..............passed
+Entao uma mensagem de e-mail enviado com sucesso............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
